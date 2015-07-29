@@ -8,3 +8,18 @@
 @interface AppDelegate: UIResponder <UIApplicationDelegate>
 @end
 
+@interface ImcViewController: UIViewController
+-(IBAction) awakeFromNib;
+-(IBAction) viewDidLoad;
+-(IBAction) custom_title;
+-(IBAction) custom_description;
+-(IBAction) custom_imc;
+-(IBAction) custom_imc_category;
+
+@end
+
+@interface PersonViewController: UIViewController
+-(IBAction) viewDidLoad;
+
+@end
+

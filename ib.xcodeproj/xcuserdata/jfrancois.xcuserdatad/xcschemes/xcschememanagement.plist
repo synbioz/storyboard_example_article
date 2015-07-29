@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>storyboard_article.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>00D67F60514F4FC373EBC03F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAFECCE17BCE72CD6F9A2093</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E855BF111B68BD260092CE23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E855BF291B68BD260092CE23</key>
 		<dict>
 			<key>primary</key>
 			<true/>

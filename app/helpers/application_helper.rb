@@ -16,7 +16,7 @@ def genre_detect(genre, subject = false)
 end
 
 def generate_description_text(name, genre, age, weight, size)
-  "#{name.capitalize} est #{genre_detect(genre)} de #{age} ans. #{genre_detect(genre, true)} pése #{weight} pour une taille de #{size}m."
+  "#{name.capitalize} est #{genre_detect(genre)} de #{age} ans. #{genre_detect(genre, true)} pése #{weight}kg pour une taille de #{size}m."
 end
 
 def calcul_imc(weight, size)

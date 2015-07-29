@@ -25,11 +25,11 @@ class PersonViewController < UIViewController
                                                     @size.text)
       custom_imc_category = imc_category(custom_imc)
 
-      your_history_view_controller = segue.destinationViewController
-      your_history_view_controller.custom_title.text = custom_title
-      your_history_view_controller.custom_description.text = custom_description
-      your_history_view_controller.custom_imc.text = custom_imc
-      your_history_view_controller.custom_imc_category.text = custom_imc_category
+      imc_view_controller = segue.destinationViewController
+      imc_view_controller.custom_title.text = custom_title
+      imc_view_controller.custom_description.text = custom_description
+      imc_view_controller.custom_imc.text = custom_imc
+      imc_view_controller.custom_imc_category.text = custom_imc_category
     end
   end
 

@@ -6,3 +6,9 @@
 @implementation AppDelegate
 @end
 
+@implementation ImcViewController
+@end
+
+@implementation PersonViewController
+@end
+
