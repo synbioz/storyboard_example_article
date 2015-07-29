@@ -7,16 +7,16 @@ def generate_custom_title(name)
   "Résultat : #{name}"
 end
 
-def genre_detect(genre, subject = false)
+def gender_detect(gender, subject = false)
   if subject
-    genre == 0 ? "Il" : "Elle"
+    gender == 0 ? "Il" : "Elle"
   else
-    genre == 0 ? "un homme" : "une femme"
+    gender == 0 ? "un homme" : "une femme"
   end
 end
 
-def generate_description_text(name, genre, age, weight, size)
-  "#{name.capitalize} est #{genre_detect(genre)} de #{age} ans. #{genre_detect(genre, true)} pése #{weight}kg pour une taille de #{size}m."
+def generate_description_text(name, gender, age, weight, size)
+  "#{name.capitalize} est #{gender_detect(gender)} de #{age} ans. #{gender_detect(gender, true)} pése #{weight}kg pour une taille de #{size}m."
 end
 
 def calcul_imc(weight, size)

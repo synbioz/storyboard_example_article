@@ -1,25 +1,25 @@
 class PersonViewController < UIViewController
-  GENRE_SELECT = 1
-  NAME_TEXT    = 2
-  WEIGHT_TEXT  = 3
-  SIZE_TEXT    = 4
-  AGE_TEXT     = 5
+  GENDER_SELECT = 1
+  NAME_TEXT     = 2
+  WEIGHT_TEXT   = 3
+  SIZE_TEXT     = 4
+  AGE_TEXT      = 5
 
 
   def viewDidLoad
-    @genre  = retrieve_subview_with_tag(self, GENRE_SELECT)
+    @gender = retrieve_subview_with_tag(self, GENDER_SELECT)
     @name   = retrieve_subview_with_tag(self, NAME_TEXT)
     @weight = retrieve_subview_with_tag(self, WEIGHT_TEXT)
     @size   = retrieve_subview_with_tag(self, SIZE_TEXT)
-    @age   = retrieve_subview_with_tag(self, AGE_TEXT)
+    @age    = retrieve_subview_with_tag(self, AGE_TEXT)
   end
 
   def prepareForSegue(segue, sender:sender)
-    if segue.identifier == "CalculYourImcSegue"
+    if segue.identifier == "ComputsYourImcSegue"
       custom_imc           = calcul_imc(@weight.text, @size.text)
       custom_title         = generate_custom_title(@name.text)
       custom_description   = generate_description_text(@name.text,
-                                                    @genre.selectedSegmentIndex,
+                                                    @gender.selectedSegmentIndex,
                                                     @age.text,
                                                     @weight.text,
                                                     @size.text)
